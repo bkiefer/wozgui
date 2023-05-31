@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grid buttonwidth="150" buttonheight="27" inset="3">
+
+  <row>
+    <button bgcolor="00557f" fgcolor="000000" span="3">
+      <text>Evaluation</text>
+    </button>
+    <button span="1"/>
+  </row>
+  <row>
+    <button bgcolor="00557f" fgcolor="ffffff" span="1">
+      <text>ok</text>
+      <command>eval_ok</command>
+    </button>
+    <button bgcolor="00557f" fgcolor="ffffff" span="1">
+      <text>copy</text>
+      <command>eval_copy</command>
+    </button>
+    <button bgcolor="00557f" fgcolor="ffffff" span="1">
+      <text>past</text>
+      <command>eval_copy_past</command>
+    </button>
+  </row>
+  <row>
+    <button bgcolor="00557f" fgcolor="ffffff" span="1">
+      <text>fail</text>
+      <command>eval_fail</command>
+    </button>
+    <button bgcolor="00557f" fgcolor="ffffff" span="1">
+      <text>nothing</text>
+      <command>eval_nothing</command>
+    </button>
+    <button bgcolor="00557f" fgcolor="ffffff" span="1">
+      <text>distracted</text>
+      <command>eval_distracted</command>
+    </button>
+  </row>
+
+ <row>
+    <button bgcolor="00557f" fgcolor="000000" span="2">
+      <text>Continue Game?</text>
+    </button>
+    <button span="2"/>
+  </row>
+  <row>
+    <button bgcolor="55aa00" fgcolor="ffffff" span="1">
+      <text>continue</text>
+      <command>continue_game</command>
+    </button>
+    <button bgcolor="55aa00" fgcolor="ffffff" span="1">
+      <text>finish</text>
+      <command>stop_game</command>
+    </button>
+  </row>
+
+  <row>
+    <button bgcolor="00557f" fgcolor="000000" span="5">
+      <text>Role Switching User Replies</text>
+    </button>
+    <button span="5"/>
+  </row>
+  <row>
+    <button bgcolor="ffaa00" fgcolor="ffffff" span="1">
+      <text>big</text>
+      <command>enter_user_request_big</command>
+    </button>
+    <button bgcolor="ffaa00" fgcolor="ffffff" span="1">
+      <text>small</text>
+      <command>enter_user_request_small</command>
+    </button>
+    <button bgcolor="ffaa00" fgcolor="ffffff" span="1">
+      <text>straight</text>
+      <command>enter_user_request_straight</command>
+    </button>
+    <button bgcolor="ffaa00" fgcolor="ffffff" span="1">
+      <text>curved</text>
+      <command>enter_user_request_curved</command>
+    </button>
+    <button bgcolor="ffaa00" fgcolor="ffffff" span="1">
+      <text>spiky</text>
+      <command>enter_user_request_spiky</command>
+    </button>
+  </row>
+
+  <row>
+    <button bgcolor="ffaa00" fgcolor="ffffff" span="1">
+      <text>pull</text>
+      <command>enter_user_request_pull</command>
+    </button>
+    <button bgcolor="ffaa00" fgcolor="ffffff" span="1">
+      <text>push</text>
+      <command>enter_user_request_push</command>
+    </button>
+    <button bgcolor="ffaa00" fgcolor="ffffff" span="1">
+      <text>extend</text>
+      <command>enter_user_request_extend</command>
+    </button>
+    <button bgcolor="ffaa00" fgcolor="ffffff" span="1">
+      <text>balance</text>
+      <command>enter_user_request_balance</command>
+    </button>
+  </row>
+
+  <row>
+    <button bgcolor="55aa00" fgcolor="ffffff" span="1">
+      <text>Yes</text>
+      <command>enter_user_answer_yes</command>
+    </button>
+    <button bgcolor="55aa00" fgcolor="ffffff" span="1">
+      <text>No</text>
+      <command>enter_user_answer_no</command>
+    </button>
+    <button bgcolor="55aa00" fgcolor="ffffff" span="1">
+      <text>Other</text>
+      <command>enter_user_answer_other</command>
+    </button>
+    <button bgcolor="55aa00" fgcolor="ffffff" span="1">
+      <text>Clear</text>
+      <command>clear_sequence</command>
+    </button>
+  </row>
+
+  <row>
+    <button bgcolor="55aa00" fgcolor="000000" span="5">
+      <text>Robot Control</text>
+    </button>
+    <button span="5"/>
+  </row>
+
+  <row>
+    <button bgcolor="fa5858" fgcolor="ffffff" span="1">
+      <text>Motors on</text>
+      <command>motors_on</command>
+    </button>
+    <button bgcolor="fa5858" fgcolor="ffffff" span="1">
+      <text>Motors off</text>
+      <command>motors_off</command>
+    </button>
+  </row>
+  
+    <row>
+    <button bgcolor="ac58fa" fgcolor="ffffff" span="1">
+      <text>turn left</text>
+      <command>turn_left</command>
+    </button>
+    <button bgcolor="ac58fa" fgcolor="ffffff" span="1">
+      <text>walk fwd</text>
+      <command>walk_fwd</command>
+    </button>
+    <button bgcolor="ac58fa" fgcolor="ffffff" span="1">
+      <text>turn right</text>
+      <command>turn_right</command>
+    </button>
+    <button bgcolor="da81f5" fgcolor="ffffff" span="1">
+      <text>sit beh</text>
+      <command>sit_down</command>
+    </button>
+     <button bgcolor="da81f5" fgcolor="ffffff" span="1">
+      <text>sitting  pose</text>
+      <command>sit_pose</command>
+    </button>  
+  </row>
+
+  <row>
+    <button bgcolor="ac58fa" fgcolor="ffffff" span="1">
+      <text>walk left</text>
+      <command>walk_left</command>
+    </button>
+    <button bgcolor="ac58fa" fgcolor="ffffff" span="1">
+      <text></text>
+    </button>
+    <button bgcolor="ac58fa" fgcolor="ffffff" span="1">
+      <text>walk right</text>
+      <command>walk_right</command>
+    </button>
+    <button bgcolor="da81f5" fgcolor="ffffff" span="1">
+      <text>stand beh</text>
+      <command>stand_up</command>
+    </button>
+     <button bgcolor="da81f5" fgcolor="ffffff" span="1">
+      <text>standing  pose</text>
+      <command>init_pose</command>
+    </button>    
+  </row>
+
+  <row>
+    <button bgcolor="ffaa00" fgcolor="ffffff" span="1">
+      <text></text>
+    </button>
+    <button bgcolor="ac58fa" fgcolor="ffffff" span="1">
+      <text>walk bwd</text>
+      <command>walk_bwd</command>
+    </button>
+    <button bgcolor="ffaa00" fgcolor="ffffff" span="1">
+      <text></text>
+    </button>
+    <button bgcolor="ffaa00" fgcolor="ffffff" span="1">
+      <text></text>
+    </button>
+    <button bgcolor="da81f5" fgcolor="ffffff" span="1">
+      <text>crouch pose</text>
+      <command>rest_pose</command>
+    </button>
+  </row>
+
+</grid>

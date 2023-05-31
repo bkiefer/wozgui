@@ -1,0 +1,259 @@
+<themes>
+	<theme name="Start ST"  randomtext="true" >
+		<utterance>a proposito di questo, posso farti una domanda?</utterance>
+		<utterance>posso farti qualche domanda su questo?</utterance>
+		<utterance>ho una curiosità, posso farti qualche domanda?</utterance>
+		<utterance>ti posso fare qualche domanda?</utterance>
+	</theme>
+	<theme name="Start ST – Diabete"  randomtext="true" >
+		<utterance>mi piacerebbe farti una domanda sul diabete, se ti va</utterance>
+		<utterance>posso chiederti una curiosità sul diabete?</utterance>
+	</theme>
+	<theme name="End ST"  randomtext="true" >
+		<utterance>possiamo tornare al gioco, ok?</utterance>
+		<utterance>ok, possiamo tornare al gioco</utterance>
+		<utterance>grazie per aver condiviso queste cose con me. adesso ti va di tornare al gioco?</utterance>
+	</theme>
+	<theme name="TurnTablet"  randomtext="true" >
+		<utterance>mi giri il tablet?</utterance>
+		<utterance>puoi girare il tablet?</utterance>
+		<utterance>gira il tablet per favore</utterance>
+	</theme>
+	<theme name="NAO" >
+		<subtheme name="Support">
+			<utterance>provaci!</utterance>
+			<utterance>vuoi parlarmene?</utterance>
+			<utterance>ti va di dirmi di più?</utterance>
+			<utterance>che ne pensi?</utterance>
+			<utterance>prova ancora</utterance>
+		</subtheme>
+		<subtheme name="FastReply">
+			<utterance>piace anche a me</utterance>
+			<utterance>non piace neanche a me</utterance>
+			<utterance>si</utterance>
+			<utterance>no</utterance>
+			<utterance>ok</utterance>
+			<utterance>sono felice</utterance>
+			<utterance>prego</utterance>
+			<utterance>grazie</utterance>
+		</subtheme>
+	</theme>
+	<theme name="QUIZ" >
+		<subtheme name="EXPLAIN">
+			<utterance>Il quiz è un gioco interattivo di domande e risposte a scelta multipla. Ci sfideremo io e te fino all'ultima domanda!</utterance>
+			<utterance>Nel gioco del quiz potrai leggere le domande e le risposte sul tablet. Poi dovrai girare il tablet così io ti darò la risposta. La risposta corretta è evidenziata in verde, ricorda tela così che potrai dirmi se rispondo nel modo corretto. Quando sarà il mio turno a fare le domande mi aiuterai a girare il tablet.</utterance>
+			<utterance>Ricordati di girare il tablet, altrimenti non riesco a leggere.</utterance>
+		</subtheme>
+		<subtheme name="MOVE">
+			<utterance>Per il gioco del quiz spostiamoci nella zona rossa</utterance>
+		</subtheme>
+		<subtheme name="START">
+			<utterance>Iniziamo a giocare!</utterance>
+			<utterance>Sei pronto a cominciare?</utterance>
+			<utterance>Pronto a giocare?</utterance>
+		</subtheme>
+		<subtheme name="correlate">
+			<utterance>ti piace?</utterance>
+			<utterance>ti piacciono?</utterance>
+			<utterance>qualche volta mangi questo alimento?</utterance>
+			<utterance>qualche volta mangi questi alimenti?</utterance>
+			<utterance>ci sei mai stato?</utterance>
+			<utterance>hai studiato questo argomento a scuola?</utterance>
+			<utterance>conosci questo sport?</utterance>
+			<utterance>Quali sono le regole?</utterance>
+			<utterance>hai un animale a casa?</utterance>
+			<utterance>che animale è?</utterance>
+			<utterance>come si chiama?</utterance>
+			<utterance>conosci qualcosa riguardo a questo argomento?</utterance>
+		</subtheme>
+		<subtheme name="non-correlate">
+			<utterance>come è organizzata di solito la tua giornata?</utterance>
+			<utterance>cosa fai di solito nel fine settimana?</utterance>
+			<utterance>cosa ti piace fare nel tuo tempo libero?</utterance>
+			<utterance>pratichi qualche sport o attività?</utterance>
+			<utterance>quale?</utterance>
+			<utterance>dopo aver fatto i compiti, cosa fai per rilassarti?</utterance>
+			<utterance>sai disegnare?</utterance>
+			<utterance>Cosa ti piace disegnare di solito?</utterance>
+			<utterance>cosa fai di solito con gli amici?</utterance>
+			<utterance>giochi mai al computer?</utterance>
+			<utterance>che giochi ti piacciono?</utterance>
+			<utterance>ti connetti qualche volta a internet?</utterance>
+			<utterance>quali siti visiti?</utterance>
+			<utterance>allora cos'altro ti piace fare?</utterance>
+		</subtheme>
+		<subtheme name="diabete">
+			<utterance>ti è mai capitato?</utterance>
+			<utterance>cosa fai quando sei in ipo glice mia?</utterance>
+			<utterance>da quanto tempo hai il diabete?</utterance>
+			<utterance>a casa, provi tu la glice mia?</utterance>
+			<utterance>come fai le iniezioni di insu lina?</utterance>
+			<utterance>di solito i tuoi genitori decidono la dose di insu lina da fare? O la decidi tu?</utterance>
+			<utterance>Riesci a cambiare i posti dove fai le iniezioni? Per esempio nella pancia, braccia, gambe?</utterance>
+			<utterance>sei capace di calco lare i carboidrati dei cibi?</utterance>
+			<utterance>ti capita di accorgerti quando la glice mia si abbassa?</utterance>
+			<utterance>cosa fai quando te ne accorgi?</utterance>
+			<utterance>provi la glicemia a scuola?</utterance>
+			<utterance>come fai a provarla?</utterance>
+			<utterance>i tuoi amici sanno che hai il diabete?</utterance>
+			<utterance>parli mai di questo argomento con loro?</utterance>
+			<utterance>conosci altri ragazzi con il diabete?</utterance>
+			<utterance>porti con te tutto il necessario per il diabete, quando esci con gli amici?</utterance>
+			<utterance>parli mai con gli adulti del diabete?</utterance>
+		</subtheme>
+	</theme>
+	<theme name="SORTING" >
+		<subtheme name="EXPLAIN">
+			<utterance>Nel gioco del tavolino interattivo vedrai sullo schermo diverse immagini. Giocando in squadra io e te dovremo trascinarle verso il gruppo corretto di appartenenza.</utterance>
+		</subtheme>
+		<subtheme name="MOVE">
+			<utterance>Per il gioco del tavolino interattivo spostiamoci nella zona verde</utterance>
+		</subtheme>
+		<subtheme name="START">
+			<utterance>Iniziamo a giocare!</utterance>
+			<utterance>Sei pronto a cominciare?</utterance>
+			<utterance>Pronto a giocare?</utterance>
+		</subtheme>
+		<subtheme name="correlate">
+			<utterance>qual è il tuo cibo preferito tra questi?</utterance>
+			<utterance>ti piace questo gioco?</utterance>
+			<utterance>ti piace di più la pasta o la carne?</utterance>
+			<utterance>ti piacciono di più le verdure o la frutta?</utterance>
+		</subtheme>
+		<subtheme name="non-correlate">
+			<utterance>di solito, vai al supermercato con i tuoi genitori?</utterance>
+			<utterance>cosa ti piace comprare?</utterance>
+			<utterance>in generale, quali sono i tuoi cibi preferiti?</utterance>
+			<utterance>cè qualche cibo che proprio non ti piace?</utterance>
+			<utterance>qual è il cibo più strano che hai mai provato?</utterance>
+			<utterance>Dove eri quando l'hai provato?All'estero?</utterance>
+			<utterance>qual è il tuo piatto preferito?</utterance>
+			<utterance>sei capace di cucinare?</utterance>
+			<utterance>quali piatti sai cucinare?</utterance>
+			<utterance>ogni tanto aiuti in cucina?</utterance>
+			<utterance>che ruolo hai quando aiuti?</utterance>
+		</subtheme>
+		<subtheme name="diabete">
+			<utterance>quale di questi alimenti pensi che possa alzare il livello di zucchero nel sangue?</utterance>
+			<utterance>da quanto tempo hai il diabete?</utterance>
+			<utterance>a casa, provi tu la glice mia?</utterance>
+			<utterance>come fai le iniezioni di insu lina?</utterance>
+			<utterance>di solito i tuoi genitori decidono la dose di insu lina da fare? O la decidi tu?</utterance>
+			<utterance>Riesci a cambiare i posti dove fai le iniezioni? Per esempio nella pancia, braccia, gambe?</utterance>
+			<utterance>sei capace di calco lare i carboidrati dei cibi?</utterance>
+			<utterance>ti capi ta di accorgerti quando la glice mia si abbassa?</utterance>
+			<utterance>cosa fai quando te ne accorgi?</utterance>
+			<utterance>provi la glicemia a scuola?</utterance>
+			<utterance>come fai a provarla?</utterance>
+			<utterance>i tuoi amici sanno che hai il diabete?</utterance>
+			<utterance>parli mai di questo argomento con loro?</utterance>
+			<utterance>conosci altri ragazzi con il diabete?</utterance>
+			<utterance>porti con te tutto il necessario per il diabete, quando esci con gli amici?</utterance>
+			<utterance>parli mai con gli adulti del diabete?</utterance>
+		</subtheme>
+	</theme>
+	<theme name="CREATIVE_DANCE" >
+		<subtheme name="MOVE">
+			<utterance>Per il gioco delle piramidi musicali spostiamoci nella zona blu</utterance>
+		</subtheme>
+		<subtheme name="EXPLAIN">
+			<utterance>Nel gioco delle piramidi musicali impareremo insieme dei movimenti che abbineremo a delle immagini e li balleremo a suon di musica!</utterance>
+		</subtheme>
+		<subtheme name="START">
+			<utterance>Iniziamo a giocare!</utterance>
+			<utterance>Sei pronto a cominciare?</utterance>
+			<utterance>Pronto a giocare?</utterance>
+		</subtheme>
+	</theme>
+	<theme name="Switch" >
+		<subtheme name="first choice">
+			<utterance>Bene, oggi ci divertiremo a giocare insieme!</utterance>
+			<utterance>Puoi scegliere una di queste attività: il gioco del quiz, il tavolino interattivo e il gioco delle piramidi musicali.</utterance>
+			<utterance>Il gioco del quiz consiste in una serie di domande e risposte</utterance>
+			<utterance>Il gioco del tavolino interattivo è un gioco di squadra tra me e te sullo schermo tach</utterance>
+			<utterance>Il gioco delle piramidi musicali consiste in un viaggio immaginario attraverso due piramidi, ma non quelle egizie</utterance>
+			<utterance>Quale attività scegli?</utterance>
+			<utterance>A cosa vuoi giocare?</utterance>
+		</subtheme>
+		<subtheme name="second choice">
+			<utterance>Dei due giochi che restano quale altro gioco ti piacerebbe provare?</utterance>
+			<utterance>Ti restano il gioco del quiz e delle piramidi musicali</utterance>
+			<utterance>Ti restano il gioco del quiz e del tavolino interattivo</utterance>
+			<utterance>Ti restano il gioco delle piramidi musicali e del tavolino interattivo</utterance>
+			<utterance>Quale scegli?</utterance>
+		</subtheme>
+		<subtheme name="third choice">
+			<utterance>Va bene, giochiamo all’ultima attività che è rimasta</utterance>
+			<utterance>Resta il gioco del quiz</utterance>
+			<utterance>Resta il gioco del tavolino interattivo</utterance>
+			<utterance>Resta il gioco delle piramidi musicali</utterance>
+		</subtheme>
+		<subtheme name="Play again">
+			<utterance>Bene, abbiamo giocato a tutte e tre le attività vuoi riprovarne una?</utterance>
+			<utterance>Possiamo rifare una di queste attività: il gioco del quiz, il tavolino interattivo e il gioco delle piramidi musicali.</utterance>
+			<utterance>Bene, ti ricordi le regole del gioco?</utterance>
+			<utterance>ok, allora andiamo a giocarci!</utterance>
+			<utterance>ok, te le spiego brevemente</utterance>
+		</subtheme>
+	</theme>
+	<theme name="Move" >
+		<subtheme name="Hand">
+			<utterance>Accompagnami tu dove vedi le mie impronte colorate!</utterance>
+			<utterance>Prendimi per mano e guidami tu</utterance>
+			<utterance>Tienimi per mano</utterance>
+			<utterance>Io continuo a camminare. Per fermarmi, lasciami andare la mano lentamente</utterance>
+			<utterance>Non avere paura a prendermi per mano, sono un bravo robottino</utterance>
+		</subtheme>
+		<subtheme name="Hand fail">
+			<utterance>Se cado non spaventarti, e mettimi in posizione seduta.</utterance>
+			<utterance>Che male! Per favore mettimi seduto</utterance>
+			<utterance>Che male! Per favore rimettimi in piedi e tienimi</utterance>
+		</subtheme>
+		<subtheme name="Manual">
+			<utterance>Puoi mettermi tu sulle mie impronte colorate?</utterance>
+			<utterance>Per favore potresti mettermi sulle mie impronte colorate?</utterance>
+			<utterance>Spostami tu sulle mie impronte colorate</utterance>
+		</subtheme>
+		<subtheme name="Impara">
+			<utterance>Come stai?</utterance>
+			<utterance>Prima di iniziare a giocare, Monica ti farà vedere come aiutarmi a camminare. Così possiamo anche spostarci insieme!</utterance>
+			<utterance>Grazie, non vedo l'ora di cominciare a giocare!</utterance>
+		</subtheme>
+	</theme>
+	<theme name="Stop game" >
+		<subtheme name="Nao asks">
+			<utterance>Che ne dici di cambiare gioco? Ormai è tanto che ci giochiamo.</utterance>
+			<utterance>Che ne dici di cambiare gioco? Potremmo giocare col tavolo interattivo!</utterance>
+			<utterance>Che ne dici di cambiare gioco? Potremmo fare il quiz!</utterance>
+			<utterance>Che ne dici di cambiare gioco? Potremmo ballare insieme!</utterance>
+			<utterance>sono un po stanco di questo gioco, che ne dici di cambiare?</utterance>
+			<utterance>Si è fatta una certa ora, il mio papà mi sta aspettando. Continuiamo la prossima volta?</utterance>
+		</subtheme>
+		<subtheme name="Child asks">
+			<utterance>vuoi cambiare gioco?</utterance>
+			<utterance>a quale gioco vuoi giocare adesso?</utterance>
+			<utterance>possiamo cambiare gioco, se vuoi!</utterance>
+		</subtheme>
+	</theme>
+	<theme name="Farewell" >
+		<subtheme name="Intro">
+			<utterance>oh no! È già ora di salutarci!</utterance>
+			<utterance>oh no! Il tempo per giocare è finito!</utterance>
+			<utterance>Devo riposarmi un pochino! È meglio se continuiamo la prossima volta.</utterance>
+			<utterance>Mi dispiace, purtroppo, dobbiamo interrompere il gioco! Ma potremo continuare la prossima volta</utterance>
+			<utterance>Sono stanco, possiamo continuare la prossima volta?</utterance>
+		</subtheme>
+		<subtheme name="Intro last interaction">
+			<utterance>oh no! È già ora di salutarci!</utterance>
+			<utterance>oh no! Il tempo per giocare è finito!</utterance>
+		</subtheme>
+		<subtheme name="Bye first interaction">
+			<utterance>Avrai notato che con questi giochi oltre che a divertirsi si può imparare qualcosa di utile per la vita di tutti i giorni. Fanne tesoro e cerca di ricordartelo</utterance>
+		</subtheme>
+		<subtheme name="Bye">
+			<utterance motion="Bye">Grazie, è stato proprio divertente giocare insieme</utterance>
+			<utterance motion="Bye">Alla prossima</utterance>
+			<utterance motion="Bye">Ciao! Ci vediamo la prossima volta</utterance>
+		</subtheme>
+	</theme>
+</themes>

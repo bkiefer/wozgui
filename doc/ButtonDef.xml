@@ -1,0 +1,16 @@
+<grid font="" fontsize=""
+      fgcolor="55aa00" bgcolor="000000"
+      buttonwidth="w" buttonheight="h"
+      inset="z">
+  <row>
+    <!-- all style attributes of grid can appear here -->
+    <button fgcolor="55aa00" bgcolor="000000" span="2">
+      <text>Session control</text> <!-- if no text: spacer -->
+      <!-- optional icon -->
+      <command>--</command> <!-- optional instead! -->
+    </button>
+    <button span="1"/> <!-- spacer -->
+
+  </row>
+  <row>...</row>
+</grid>

@@ -1,0 +1,43 @@
+<grid buttonheight="25">
+  <row>
+    <button>
+      <text>play quiz</text>
+      <command>provide(selectgame, value=quiz)</command>
+    </button>
+    <button>
+      <text>play sorting game</text>
+      <command>provide(selectgame, value=sorting)</command>
+    </button>
+	</row>
+	<row>
+  <button>
+     <text>conv filling</text>
+     <command>provide(convfilling)</command>
+   </button>
+	</row>
+
+<!--
+  <row>
+    <button span="2" bgcolor="FFFF00">
+      <text>provide(freeresponse)</text>
+      <command>provide(freeresponse)</command>
+    </button>
+  </row>
+  <row>
+    <button>
+      <text>Inform(playAgain)</text>
+      <command>inform(play, value=yes)</command>
+    </button>
+    <button>
+      <text>Inform(stopPlaying)</text>
+      <command>inform(play, value=no)</command>
+    </button>
+  </row>
+  <row>
+    <button>
+      <text>Silence()</text>
+      <command>silence(silence)</command>
+    </button>
+  </row>
+-->
+</grid>

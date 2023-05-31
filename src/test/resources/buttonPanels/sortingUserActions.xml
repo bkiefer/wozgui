@@ -1,0 +1,53 @@
+<grid buttonwidth="200" buttonheight="30">
+  <row>
+    <button span="2" bgcolor="FFFF00">
+      <text>free response</text>
+      <command>freeresponse</command>
+    </button>
+  </row>
+  <row>
+    <button>
+      <text>Request Continue</text>
+      <command>request(playContinue, what=game)</command>
+    </button>
+    <button>
+      <text>Request New Images</text>
+      <command>request(new, what=game)</command>
+    </button>
+    <button>
+      <text>Stop Game</text>
+      <command>request(stop, what=game)</command>
+    </button>
+  </row>
+  <row>
+   <button>
+     <text>Reject AnotherGame</text>
+     <command>reject(repeat, what=game)</command>
+   </button>
+   <button>
+     <text>Confirm AnotherGame</text>
+     <command>confirm(repeat, what=game)</command>
+   </button>
+  </row>
+  <row>
+    <button>
+      <text>GameFun=no</text>
+      <command>provide(fun, value=no)</command>
+    </button>
+    <button>
+      <text>GameFun=yes</text>
+      <command>provide(fun, value=yes)</command>
+    </button>
+  </row>
+  <row><button span="4" bgcolor="FFFF00"><text></text></button></row>
+  <row>
+    <button>
+      <text>Next Robot Move</text>
+      <command>request(nextMove, actor=robot)</command>
+    </button>
+    <button>
+      <text>Toggle Robot Automove</text>
+      <command>provide(toggleRobotInitiative)</command>
+    </button>
+  </row>
+</grid>

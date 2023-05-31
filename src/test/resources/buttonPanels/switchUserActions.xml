@@ -1,0 +1,16 @@
+<grid>
+  <row>
+    <button span="2" bgcolor="FFFF00">
+      <text>free response</text>
+      <command>freeresponse</command>
+    </button>
+  </row>
+  <row>
+  </row>
+  <row>
+    <button>
+      <text>Silence()</text>
+      <command>silence(silence)</command>
+    </button>
+  </row>
+</grid>

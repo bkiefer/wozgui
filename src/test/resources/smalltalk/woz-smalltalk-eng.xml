@@ -1,0 +1,101 @@
+﻿<themes>
+  <theme name= "interaction">
+	<subtheme name="intro-generic" randomtext="true">
+		<utterance motion="cockhead">may I ask you a question that I have in mind?</utterance>
+		<utterance>I have a curiosity</utterance>
+		<utterance>speaking about this, can I ask you a question??</utterance>
+	</subtheme>
+	<subtheme name="intro-diabetes" randomtext="true">
+		<utterance>speaking about the diabetes</utterance>
+		<utterance>now I would like to ask you some questions regarding diabetes, if you agree</utterance>
+		<utterance>may I ask a curiosity about diabetes?</utterance>
+	</subtheme>
+	<subtheme name="return-to-game" randomtext="true">
+		<utterance>we can return to the game, ok?</utterance>
+		<utterance>ok, now we can resume the game</utterance>
+		<utterance>thanks for sharing these things with me. Shall we return to the game?</utterance>
+	</subtheme>
+	<subtheme name="game-change" randomtext="true">
+		<utterance>do you want to change the game?</utterance>
+		<utterance>which game do you want to play now?</utterance>
+		<utterance>we can change the game, if you want!</utterance>
+	</subtheme>
+  </theme>
+  <theme name="QUIZ">
+	<subtheme name="correlated">
+		<utterance>do you like it?</utterance>
+		<utterance>do you like them?</utterance>
+		<utterance>do you sometimes eat it?</utterance>
+		<utterance>do you sometimes eat them?</utterance>
+		<utterance>have you ever been there?</utterance>
+		<utterance>did you study it at school?"</utterance>
+		<utterance>do you know this sport?</utterance>
+		<utterance>do you have a pet at home?</utterance>
+		<utterance>do you know something about this?</utterance>
+	</subtheme>
+	<subtheme name="not-correlated">
+		<utterance>how is usually organized your day?</utterance>
+		<utterance>what do you usually do on weekend?</utterance>
+		<utterance>what do you like doing in your spare time?</utterance>
+		<utterance>do you play any sports or some activity?</utterance>
+		<utterance>after homework, what do you do to relax?</utterance>
+		<utterance>do you like sport?</utterance>
+		<utterance>are you able to draw?</utterance>
+		<utterance>what do you usually do with your friends?</utterance>
+		<utterance>do you like to play with the computer?</utterance>
+		<utterance>do you sometimes use internet?</utterance>
+	</subtheme>
+	<subtheme name="diabetes">
+		<utterance>did it ever happen to you?</utterance> //referred to diabetes past experiences
+		<utterance>what do you do if you’ve a hypoglycemia condition?</utterance>
+		<utterance>how long have you discovered diabetes?</utterance>
+		<utterance>at home do you check glycemia by yourself?</utterance>
+		<utterance>how do you do for insulin injections?</utterance>
+		<utterance>do you ask to your parents to decide insulin dose?</utterance>
+		<utterance>do you change body locations for insulin injections?</utterance>
+		<utterance>can you calculate carbohydrates?</utterance>
+		<utterance>do you feel when glycemia is lowering?</utterance>
+		<utterance>how do you check glycemia at school?</utterance>
+		<utterance>do your friends know about diabetes? Do you ever talk about it with them?</utterance>
+		<utterance>do you know other diabetic children?</utterance>
+		<utterance>do you carry necessary for diabetes when you go out with friends?</utterance>
+		<utterance>how are adults with you relating to diabetes?</utterance>
+	</subtheme>
+  </theme>
+  <theme name="SORTING">
+	<subtheme name="correlated">
+		<utterance>which is your favourite food among these?</utterance>
+		<utterance>do you like this?</utterance>
+		<utterance>do you like pasta?</utterance>
+		<utterance>do you like meat?</utterance>
+		<utterance>do you like vegetables?</utterance>
+		<utterance>do you like fruits?</utterance>
+	</subtheme>
+	<subtheme name="not-correlated">
+		<utterance>do you usually go to the supermarket with your parents?</utterance>
+		<utterance>which  are your favourite foods, general speaking?</utterance>
+		<utterance>is there some food you don’t like?</utterance>
+		<utterance>which is the strangest  food you have ever eaten?</utterance>
+		<utterance>which is your favourite dish?</utterance>
+		<utterance>can you cook?</utterance>
+		<utterance>which dishes can you cook?</utterance>
+		<utterance>do you sometimes help to cook?</utterance>
+	</subtheme>
+	<subtheme name="diabetes">
+		<utterance>which of these foods do you think is good to treat reactions?</utterance>
+		<utterance>which of these foods do you think would raise your blood sugar?</utterance>
+		<utterance>how long have you discovered diabetes?</utterance>
+		<utterance>at home do you check glycemia by yourself?</utterance>
+		<utterance>how do you do for insulin injections?</utterance>
+		<utterance>do you ask to your parents to decide insulin dose?</utterance>
+		<utterance>do you change body locations for insulin injections?</utterance>
+		<utterance>can you calculate carbohydrates?</utterance>
+		<utterance>do you feel when glycemia is lowering?</utterance>
+		<utterance>how do you check glycemia at school?</utterance>
+		<utterance>do your friends know about diabetes? Do you ever talk about it with them?</utterance>
+		<utterance>do you know other diabetic children?</utterance>
+		<utterance>do you carry necessary for diabetes when you go out with friends?</utterance>
+		<utterance>how are adults with you relating to diabetes?</utterance>
+	</subtheme>
+  </theme>
+</themes>

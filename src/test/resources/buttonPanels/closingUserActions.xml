@@ -1,0 +1,32 @@
+<grid>
+  <row>
+    <button span="2" bgcolor="FFFF00">
+      <text>free response</text>
+      <command>freeresponse</command>
+    </button>
+  </row>
+   <button>
+      <text>Provide(GameFun=no)</text>
+      <command>provide(fun, value=no)</command>
+    </button>
+    <button>
+      <text>Provide(GameFun=yes)</text>
+      <command>provide(fun, value=yes)</command>
+    </button>
+  <row>
+   <button>
+     <text>Inform(MeetAgain=no)</text>
+     <command>inform(meetagain, value=no)</command>
+   </button>
+   <button>
+     <text>Inform(MeetAgain=yes)</text>
+     <command>inform(meetagain, value=yes)</command>
+   </button>
+  </row>
+  <row>
+   <button>
+     <text>Silence()</text>
+     <command>silence(silence)</command>
+   </button>
+  </row>
+</grid>

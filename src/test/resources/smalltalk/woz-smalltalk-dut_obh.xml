@@ -1,0 +1,97 @@
+﻿<themes>
+  <theme name="wat vragen" randomtext="true">
+    <utterance>mag ik je een vraag stellen?</utterance>
+    <utterance>ik heb een vraag</utterance>
+    <utterance>nu we het ervover hebbe, mag ik je wat vragen??</utterance>
+  </theme>
+  <theme name="vraag diabetes" randomtext="true">
+    <utterance>over diabetes gesproken</utterance>
+    <utterance>als je het goed vind wil ik wat vragen over diabetes</utterance>
+    <utterance>mag ik je wat over diabetes vragen?</utterance>
+  </theme>
+  <theme name="terug spel" randomtext="true">
+    <utterance>terug naar het spel, okay?</utterance>
+    <utterance>okay, dan gaan we verder spelem</utterance>
+    <utterance>beadnkt voor je antwoorden, we spelen verder?</utterance>
+  </theme>
+  <theme name="amder spel" randomtext="true">
+    <utterance>wil je een ander spel spelen?</utterance>
+    <utterance>welk spel zou je nu willen doen?</utterance>
+    <utterance>we kunnen een ander spel gaan doen!</utterance>
+  </theme>
+  <theme name="Quiz Algemeen">
+    <subtheme name="Leuk?">
+      <utterance>Vind je het een leuke quiz?</utterance>
+      <utterance>Fijn! Ik heb het ook naar mijn zin</utterance>
+      <utterance>Ik denk dat je de quiz steeds leuker gaat vinden</utterance>
+      <utterance>Jammmer. Ik vind het leuk om deze quiz tegen jou te spelen.</utterance>
+    </subtheme>
+    <subtheme name="Moeilijk?">
+      <utterance>Vind je het een moeilijke quiz?</utterance>
+      <utterance>Het is een moeilijke quiz hè? Maar je wordt steeds beter.</utterance>
+      <utterance>Je weet veel. Misschien dat de quiz nog moeilijker wordt.</utterance>
+      <utterance>Ja, je weet erg veel. Waarschijnlijk dat er straks moeilijkere vragen komen.</utterance>
+    </subtheme>
+    <subtheme name="Interessant?">
+      <utterance>Vind je het een interessante quiz?</utterance>
+      <utterance>Mooi zo. Het zijn inderdaad interessante vragen.</utterance>
+      <utterance>Waarschijnlijk wordt de quiz zo nog interessanter.</utterance>
+      <utterance>Jammmer. Misschien dat de vragen straks interessanter zijn.</utterance>
+    </subtheme>
+  </theme>
+  <theme name ="Quiz prijzen">
+    <subtheme name="Winnen?">
+      <utterance>Je staat voor, denk je dat je gaat winnen?</utterance>
+      <utterance>Goed zo, maar ik ga mijn best doen om gelijk te komen.</utterance>
+      <utterance>Het zal spannend worden!</utterance>
+      <utterance>Je speelt wel erg goed. Het zal moeilijk worden voor mij om nog te winnen.</utterance>
+    </subtheme>
+    <subtheme name="Inhalen?">
+      <utterance>Ik sta achter, denk je dat ik je nog kan inhalen?</utterance>
+      <utterance>Weet je het zeker. Je weet wel veel antwoorden.</utterance>
+      <utterance>Ik weet het ook niet. Ik ga mijn best doen!</utterance>
+      <utterance>Ik ga mijn best doen om je nog in te halen!</utterance>
+    </subtheme>
+    <subtheme name="Vol houden">
+      <utterance>Je staat voor, denk je dat je het vol kan houden</utterance>
+      <utterance>Goed zo, maar ik ga mijn best doen om gelijk te komen</utterance>
+      <utterance>We zullen zien. Je speelt erg goed</utterance>
+      <utterance>Je weet wel veel antwoorden, dus het wordt moeilijk voor mij.</utterance>
+    </subtheme>
+  </theme>
+  <theme name ="Quiz stimuleren">
+    <subtheme name="nog inhalen">
+      <utterance>Jij staat achter, denk je dat je me nog in kan halen?</utterance>
+      <utterance>Je weet veel antwoorden, dus je kunt mij nog best inhalen.</utterance>
+      <utterance>We gaan kijken of het je lukt.</utterance>
+      <utterance>Als je goed je best doet lukt het misschien nog wel. Kop op.</utterance>
+    </subtheme>
+    <subtheme name="nog volhouden">
+      <utterance>Ik sta voor, denk je dat ik het vol kan houden?</utterance>
+      <utterance>Het wordt wel moeilijk. Het zijn lastige vragen.</utterance>
+      <utterance>Je weet veel antwoorden, dus het kan nog.</utterance>
+      <utterance>Je weet veel antwoorden, dus het kan nog.</utterance>
+    </subtheme>
+    <subtheme name="nog winnen">
+      <utterance>Denk je dat je nog van me kan winnen?</utterance>
+      <utterance>Kom maar op. Je weet veel antwoorden.</utterance>
+      <utterance>Probeer zoveel mogelijk vragen nog goed te beantwoorden.</utterance>
+      <utterance>Als je je best doet kan je zeker nog gelijk komen.</utterance>
+    </subtheme>
+  </theme>
+  <theme name ="Quiz spel">
+    <subtheme name="Wil je verder">
+      <utterance>Wil je verder spelen</utterance>
+    </subtheme>
+    <subtheme name="wel verder">
+      <utterance>Oke, dan gaan we door</utterance>
+      <utterance>Fijn dan gaan we door</utterance>
+    </subtheme>
+    <subtheme name="niet meer">
+      <utterance>Oke, dan stoppen we.</utterance>
+      <utterance>Jammer, maar dan stoppen we nu</utterance>
+    </subtheme>
+	
+  </theme>
+</themes>
+

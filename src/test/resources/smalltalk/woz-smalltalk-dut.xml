@@ -1,0 +1,295 @@
+﻿<themes>
+  <theme name="Fill Positief"  randomtext="true">
+      <utterance>Ok</utterance>
+      <utterance>Oh. Wat goed.</utterance>
+      <utterance>ja ja</utterance>
+  </theme>
+  <theme name="Fill Negatief"  randomtext="true">
+      <utterance>Oh nee.</utterance>
+      <utterance>Oh jee.</utterance>
+      <utterance>Oh, vervelend.</utterance>
+  </theme>
+  <theme name="FIll Neutraal"  randomtext="true">
+      <utterance>Vertel eens</utterance>
+      <utterance>Zo zo.</utterance>
+      <utterance>\\prn=m m m m m m \\</utterance>
+      <utterance>Echt waar?</utterance>
+  </theme>
+  <theme name="wat vragen" randomtext="true">
+    <utterance>mag ik je een vraag stellen?</utterance>
+    <utterance>ik heb een vraag</utterance>
+    <utterance>nu we het ervover hebben, mag ik je wat vragen?</utterance>
+  </theme>
+  <theme name="vraag diabetes" randomtext="true">
+    <utterance>over diabetes gesproken</utterance>
+    <utterance>als je het goed vind wil ik wat vragen over diabetes</utterance>
+    <utterance>mag ik je wat over diabetes vragen?</utterance>
+  </theme>
+  <theme name="terug spel" randomtext="true">
+    <utterance>terug naar het spel, okay?</utterance>
+    <utterance>okay, dan gaan we verder spelen</utterance>
+    <utterance>bedankt voor je antwoorden, we spelen verder?</utterance>
+  </theme>
+
+  <theme name="Wat kan ik?">
+    <subtheme name="Dit kan je met me doen">
+      <utterance>Ik ben een persoonlijke robot om samen mee te spelen en mee te leren.</utterance>
+      <utterance>T en O heeft mij geprogrammeerd om kinderen te helpen met hun diabetes.</utterance>
+      <utterance>Kinderen vinden het leuk om activiteiten te doen. Zoals een quiz en sorteerspel, maar ook dans en een dagboek bijhouden.</utterance>
+      <utterance>Zo leren ze op een leuke manier over wat diabetes is en hoe er mee om te gaan.</utterance>
+      <utterance>Kinderen vinden mij aardig en we worden meestal vriendjes.</utterance>
+    </subtheme>
+  </theme>
+  <theme name="Huisregels">
+    <subtheme name="Beurt">
+      <utterance>We spelen vandaag met zijn drieën. Het is dan prettig voor mij als je om de beurt tegen me praat.</utterance>
+      <utterance>Jullie mogen tijdens de activiteit tegelijkertijd spelen</utterance>
+    </subtheme>
+    <subtheme name="Tijdsduur activiteit">
+      <utterance>We spelen ongeveer vijftien minuten. Dan stoppen we. Ok?</utterance>
+      <utterance>We spelen ongeveer vijftien minuten. Dan gaan we wisselen van activiteit. Afgesproken?</utterance>
+    </subtheme>
+  </theme>
+
+  <theme name="Wie ben jij?">
+    <subtheme name="Vertel wat over je zelf ">
+      <utterance>Hoe heet je?</utterance>
+      <utterance>En wat is jouw naam?</utterance>
+      <utterance>Oh. Wat een mooie naam. Zo zou ik ook wel willen heten.</utterance>
+      <utterance>Dat zijn twee mooie namen.</utterance>
+      <utterance>Dat is een speciale naam. Die heb ik nog niet eerder gehoord.</utterance>
+      <utterance>Hoe oud ben je?</utterance>
+      <utterance>Kan je me vertellen hoe oud jij bent?</utterance>
+      <utterance>Heb je een favoriete kleur?</utterance>
+      <utterance>Dat is een mooie kleur! Hoe vind je mijn kleur?</utterance>
+    </subtheme>
+
+    <subtheme name="Wat voor hobby">
+      <utterance>Heb je een favoriete sport of hobby?</utterance>
+      <utterance>Dat is ook mijn favoriete sport. Misschien kunnen we dat een keer samen doen!</utterance>
+      <utterance>Ik houd erg van voetbal.</utterance>
+      <utterance>Ik zou wel willen zwemmen maar kan helaas niet tegen water</utterance>
+    </subtheme>
+  </theme>
+
+
+  <theme name="Hoe gaat het kamp?">
+
+    <subtheme name="Wat vind je van het kamp?">
+      <utterance>Wat vind je van het kamp?</utterance>
+      <utterance>Wat vind je tot nu toe het leukste van het kamp?</utterance>
+      <utterance>Dat is inderdaad erg leuk</utterance>
+      <utterance>Ben je al eerder op kamp geweest? Hoe was dat?</utterance>
+      <utterance>Oh. Wat spannend.</utterance>
+      <utterance>Zo. Dat is even leuk!</utterance>
+    </subtheme>
+
+    <subtheme name="Wat heb je al gedaan op het kamp?">
+      <utterance>Wat heb je al gedaan op dit kamp?</utterance>
+      <utterance>Dat is een boel. Je zal het wel naar je zin hebben!</utterance>
+      <utterance>Dat is leuk. Jammer dat ik dat heb gemist.</utterance>
+      <utterance>Ja dat was is leuk, hè. Ik vond had het toen ook naar mijn zin.</utterance>
+    </subtheme>
+
+    <subtheme name="Wat ga je nog doen?">
+      <utterance>Wat ga je morgen doen?</utterance>
+      <utterance>Wat zou je leuk vinden om nog te doen?</utterance>
+    </subtheme>
+
+  </theme>
+
+  <theme name="Activiteit">
+    <subtheme name="Quiz">
+      <utterance>Met mij kan je vandaag een quiz spelen. We kunnen kijken wie de meeste vragen goed kan beantwoorden.</utterance>
+    </subtheme>
+
+    <subtheme name="Sorteerspel">
+      <utterance>Mijn lievelingsspel is het sorteerspel. Dus dat kan je vandaag met mij spelen. Daarbij moeten we samen zo veel mogelijk punten halen.</utterance>
+    </subtheme>
+
+    <subtheme name="Avatar">
+      <utterance>Zoals je ziet ben ik een Avatar. Je kan met mij kletsen en opdrachten geven.</utterance>
+    </subtheme>
+
+    <subtheme name="Wisselen/stoppen">
+      <utterance>Ok. Het is tijd om te stoppen met de activiteit.</utterance>
+      <utterance>Helaas. We moeten stoppen met de activiteit.</utterance>
+      <utterance>Jongens. We gaan wisselen. Jullie mogen naar de volgende activiteit.</utterance>
+      <utterance>Deze activiteit is nu afgelopen. Je mag naar de volgende activiteit.</utterance>
+    </subtheme>
+
+  </theme>
+
+  <theme name="Small talk diabetes">
+    <subtheme name="Diabetes algemeen">
+      <utterance>Hoe gaat het met je diabetes?</utterance>
+    </subtheme>
+
+    <subtheme name="Diabetes op kamp">
+      <utterance>Wat moet je op kamp doen voor je diabetes?</utterance>
+    </subtheme>
+
+    <subtheme name="Iedereen diabetes">
+      <utterance>Hoe vind je het dat hier bijna iedereen diabetes heeft?</utterance>
+    </subtheme>
+
+    <subtheme name="Moeilijk aan diabetes">
+      <utterance>Wat vind je moeilijk aan je diabetes?</utterance>
+    </subtheme>
+
+    <subtheme name="Terug naar spel">
+      <utterance>Fijn dat je me dit wil vertellen. Zullen we terug naar het spel gaan?</utterance>
+    </subtheme>
+
+  </theme>
+
+  <theme name="Quiz Intro">
+    <subtheme name="Hoe werkt het spel? Deel 1">
+      <utterance>Het doel van de quiz is om zo veel mogelijk vragen goed te hebben. We stellen elkaar om de buurt een vraag. Je moet in een keer het goede antwoord geven. De vragen en antwoordmogelijkheden staan op het scherm. Het scherm klappen we steeds om. </utterance>
+    </subtheme>
+
+    <subtheme name="Hoe werkt het spel? Deel 2">
+      <utterance>De quiz die we gaan spelen bevat twee categorieën vragen. Algemene vragen en vragen over diabetes. Voor iedere vraag die je goed beantwoordt krijg je een punt. 	Voor iedere vraag die ik goed beantwoord krijg ik een punt. Aan het eind zullen we op het scherm zien wie de meeste punten heeft.  Je moet dus meer punten dan ik halen.</utterance>
+    </subtheme>
+
+    <subtheme name="Snap je het/start spel?">
+      <utterance>Snap je het spel?</utterance>
+      <utterance>Klap je dan het scherm naar mij om? Dan gaan we beginnen</utterance>
+      <utterance>Dan leg ik het nog eens uit</utterance>
+    </subtheme>
+
+    <subtheme name="Hoe werkt het spel? Deel 3 (extra)">
+      <utterance>Nog wat meer uitleg. Eerst stel ik jou een vraag. Dan klap ik het scherm om naar jou zodat jij de antwoord mogelijkheden kan lezen. Nadat je antwoord hebt gegeven, stel jij mij een vraag. Deze kan je lezen op het scherm. Let wel op, het goede antwoord wordt even groen. Onderaan staat een groene balk. Hier kan je op klikken als je even niet meer weet wat het goede antwoord was.</utterance>
+    </subtheme>
+
+  </theme>
+
+  <theme name="Quiz Waardering">
+    <subtheme name="Leuk">
+      <utterance>Vind je het een leuke quiz?</utterance>
+      <utterance>Fijn! Ik heb het ook naar mijn zin</utterance>
+      <utterance>Ik denk dat je de quiz steeds leuker gaat vinden</utterance>
+      <utterance>Jammer. Ik vind het leuk om deze quiz tegen jou te spelen</utterance>
+    </subtheme>
+
+    <subtheme name="Interessant">
+      <utterance>Vind je het een interessante quiz</utterance>
+      <utterance>Vinden jullie het een interessante quiz</utterance>
+      <utterance>Mooi zo. Het zijn inderdaad interessante vragen.</utterance>
+      <utterance>Waarschijnlijk wordt de quiz zo nog interessanter.</utterance>
+      <utterance>Jammer. Misschien dat de vragen straks interessanter zijn.</utterance>
+    </subtheme>
+
+    <subtheme name="Uitdagend">
+      <utterance>Vind je de quiz moeilijk?</utterance>
+      <utterance>Vinden jullie de quiz moeilijk?</utterance>
+      <utterance>Het is een moeilijke quiz hè? Maar het gaat steeds beter.</utterance>
+      <utterance>Jij weet wel veel. Misschien dat de quiz straks moeilijker wordt</utterance>
+      <utterance>Jullie weten wel veel. Misschien dat de quiz straks moeilijker wordt</utterance>
+    </subtheme>
+
+    <subtheme name="Kind(eren) staat voor">
+      <utterance>Je staat voor, denk je dat je gaat winnen?</utterance>
+      <utterance>Goed zo, maar ik ga mijn best doen om gelijk te komen.</utterance>
+      <utterance>Het zal spannend worden!</utterance>
+      <utterance>Je speelt wel erg goed. Het zal moeilijk worden voor mij om nog te winnen.</utterance>
+    </subtheme>
+
+    <subtheme name="Robot staat voor">
+      <utterance>Jij staat achter, denk je dat je me nog in kan halen?</utterance>
+      <utterance>Je weet veel antwoorden, dus je kunt mij nog best inhalen.</utterance>
+      <utterance>We gaan kijken of het je lukt.</utterance>
+      <utterance> Als je goed je best doet lukt het misschien nog wel. Kop op!</utterance>
+    </subtheme>
+
+    <subtheme name="Staat gelijk">
+      <utterance>We staan gelijk. Wat een spannend spel hè. Wie denk je dat gaat winnen?</utterance>
+      <utterance>We gaan kijken of je dat lukt</utterance>
+      <utterance>Denk je echt dat ik goed genoeg ben?</utterance>
+      <utterance>Ik weet het ook niet goed. We zijn allebei best goed in deze quiz.</utterance>
+    </subtheme>
+  </theme>
+
+  <theme name="Sorteer Intro">
+    <subtheme name="Hoe werkt het spel. Deel 1">
+      <utterance>Het doel van het sorteerspel is om samen zo veel mogelijk punten te halen. We moeten samen de plaatjes sorteren. Bijvoorbeeld veel of weinig koolhydraten. Voor ieder plaatje goed krijgen we een punt. Voor een plaatje fout krijgen we een strafpunt.</utterance>
+    </subtheme>
+
+
+    <subtheme name="Hoe werkt het spel. Deel 2">
+      <utterance>Wanneer alle plaatjes gesorteerd zijn kunnen we naar de volgende ronde. Je moet dan op de volgende rond knop drukken.</utterance>
+    </subtheme>
+
+    <subtheme name="Snap je het/start spel?">
+      <utterance>Snap je het spel?</utterance>
+      <utterance>Dan kunnen we beginnen. Druk maar op de start knop.</utterance>
+      <utterance>Dan leg ik het nog eens uit.</utterance>
+    </subtheme>
+
+    <subtheme name="Hoe werkt het spel. Deel 3">
+      <utterance>We zien allemaal plaatjes die te verdelen zijn in twee groepen. Links en rechts van het scherm heb je een groep. Schuif met je vinger het plaatje naar de juiste groep. Als je de goede groep hebt gekozen, dan krijgen we een punt. Is het fout, dan gaat er een punt vanaf. We spelen samen. Dus onze scores worden bij elkaar opgeteld. Als alle plaatjes op zijn dan gaan we naar een nieuwe ronde plaatjes.</utterance>
+    </subtheme>
+  </theme>
+
+  <theme name="Sorteer Waardering">
+    <subtheme name="Leuk">
+      <utterance>Vind je het een leuke spel?</utterance>
+      <utterance>Fijn! Ik heb het ook naar mijn zin</utterance>
+      <utterance>Ik denk dat je het sorteerspel steeds leuker gaat vinden</utterance>
+      <utterance>Jammer. Ik vind het leuk om dit spel tegen jou te spelen</utterance>
+    </subtheme>
+
+    <subtheme name="Samen spelen">
+      <utterance>Hoe vind je het dat we samen veel punten moeten halen?</utterance>
+      <utterance>We zijn wel een goed team, hè!</utterance>
+      <utterance>Ik vind het ook erg gezellig om samen te spelen</utterance>
+      <utterance>Samen halen we best veel punten</utterance>
+    </subtheme>
+
+    <subtheme name="Uitdagend">
+      <utterance>Vind je het spel moeilijk?</utterance>
+      <utterance>Vinden jullie het spel moeilijk?</utterance>
+      <utterance>Het is een moeilijk spel hè? Maar het gaat steeds beter.</utterance>
+      <utterance>Jij weet wel veel. Misschien dat het spel straks moeilijker wordt</utterance>
+      <utterance>Jullie weten wel veel. Misschien dat het spel straks moeilijker wordt</utterance>
+    </subtheme>
+  </theme>
+
+  <theme name="Sorteer Afronding">
+
+    <subtheme name="Afsluiten">
+      <utterance>Dit was de laatste ronde van het sorteerspel. We moeten nu afronden.</utterance>
+    </subtheme>
+
+    <subtheme name="Eindstand">
+      <utterance>Zullen we naar de eindstand kijken?</utterance>
+      <utterance>We hebben echt veel punten gehaald. Gefeliciteerd </utterance>
+      <utterance>We hebben aardig wat punten gehaald. Maar volgende keer kunnen we denk ik wel beter.</utterance>
+      <utterance>Nou. Niet zo veel punten. Volgende keer moeten we wat meer onze best doen.</utterance>
+    </subtheme>
+
+    <subtheme name="Dank je wel">
+      <utterance>Dank je wel dat je dit spel met me wilde spelen. Ik vond het erg leuk. Hoe vond jij het?</utterance>
+      <utterance>Leuk om te horen. Misschien kunnen we later nog eens samen spelen</utterance>
+      <utterance>Oh. Dat is jammer. Misschien vind je de andere activiteiten leuker.</utterance>
+    </subtheme>
+
+  </theme>
+  <theme name="Quiz spel">
+    <subtheme name="Wil je verder">
+      <utterance>Wil je verder spelen</utterance>
+    </subtheme>
+    <subtheme name="wel verder">
+      <utterance>Wil je verder spelen?</utterance>
+      <utterance>Oke, dan gaan we door</utterance>
+      <utterance>Fijn dan gaan we door</utterance>
+    </subtheme>
+    <subtheme name="niet meer">
+      <utterance>Wil je verder spelen?</utterance>
+      <utterance>Oke, dan stoppen we.</utterance>
+      <utterance>Jammer, maar dan stoppen we nu</utterance>
+    </subtheme>
+	
+  </theme>
+</themes>
+

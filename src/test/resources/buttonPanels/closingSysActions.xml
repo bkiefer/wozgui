@@ -1,0 +1,45 @@
+<grid>
+  <row>
+    <button span="2" bgcolor="00FF00">
+      <text>free response</text>
+      <command>freeresponse</command>
+    </button>
+  </row>
+  <row>
+   <button>
+     <text>Continue(continue)</text>
+     <command>continue(continue)</command>
+   </button>
+ </row>
+ <row>
+  <button>
+     <text>Express(Failure)</text>
+     <command>express(failure)</command>
+   </button>
+   <button>
+     <text>Express(Success)</text>
+     <command>express(success)</command>
+   </button>
+  </row>
+  <row>
+   <button>
+     <text>Request(GameFun)</text>
+     <command>request(gamefun)</command>
+   </button>
+ </row>
+<row>
+  <button>
+     <text>Acknowledgement(Fun)</text>
+     <command>acknowledgement(fun)</command>
+   </button>
+   <button>
+     <text>Acknowledgement(NoFun)</text>
+     <command>acknowledgement(nofun)</command>
+   </button>
+</row>
+<row>
+   <button>
+     <text>Salutation(closing)</text>
+     <command>salutation(closing)</command>
+   </button>
+</row></grid>

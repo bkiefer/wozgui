@@ -1,0 +1,235 @@
+<grid buttonwidth="310" buttonheight="30" fontsize="18">
+  <!-- game start -->
+  <row>
+    <button span="4" bgcolor="FFFF00">
+      <text>free response</text>
+      <command>freeresponse</command>
+    </button>
+  </row>
+  <row>
+    <button span="2"><text>Game Start / Set Who Asks Questions</text></button>
+    <button span="2"><text>Tablet orientation</text></button>
+  </row>
+  <row>
+    <button>
+      <text>Provide(Asker=user)</text>
+      <command>provide(role, asker=user)</command>
+    </button>
+    <button>
+      <text>Provide(Asker=robot)</text>
+      <command>provide(role, asker=robot)</command>
+    </button>
+    <button>
+      <text>Tablet faces child</text>
+      <command>provide(turntablet, what=child)</command>
+    </button>
+    <button>
+      <text>Answers read/Tablet faces robot</text>
+      <command>provide(turntablet, what=robot)</command>
+    </button>
+
+   <!-- are the next two really needed ??
+    <button>
+      <text>Confirm(Asker=user)</text>
+      <command>confirm(role, asker=user)</command>
+    </button>
+    <button>
+      <text>Confirm(Asker=robot)</text>
+      <command>confirm(role, asker=robot)</command>
+    </button>
+    -->
+  </row>
+  <row>
+    <button bgcolor="EECCDD">
+      <text>Stop talking</text>
+      <command>provide(stoptalking)</command>
+    </button>
+     <button>
+      <text>Do Turn Tablet</text>
+      <command>inform(tablet, silent=true)</command>
+    </button>
+   </row>
+  <row><button span="4"><text>Robot Asks Questions</text></button></row>
+  <!-- Asker is robot, user has to provide answers -->
+  <row>
+    <button span="2">
+      <text>Go To Next Question</text>
+      <command>provide(nextquestion)</command>
+    </button>
+  </row>
+  <row>
+    <button>
+      <text>Provide(Answer #1)</text>
+      <command>provide(answer, number=1)</command>
+    </button>
+    <button>
+      <text>Provide(Answer #2)</text>
+      <command>provide(answer, number=2)</command>
+    </button>
+    <button>
+      <text>Provide(Answer #3)</text>
+      <command>provide(answer, number=3)</command>
+    </button>
+    <button>
+      <text>Provide(Answer #4)</text>
+      <command>provide(answer, number=4)</command>
+    </button>
+  </row>
+  <row>
+    <button>
+      <text>Provide(Answer #5)</text>
+      <command>provide(answer, number=5)</command>
+    </button>
+    <button>
+      <text>Provide(Answer=unknown)</text>
+      <command>provide(answer, id=unknown)</command>
+    </button>
+  </row>
+  <row>
+    <button>
+      <text>Request(RepeatAnswers)</text>
+      <command>request(repeat, what=answers)</command>
+    </button>
+    <button>
+      <text>Request(RepeatQuestion)</text>
+      <command>request(repeat, what=question)</command>
+    </button>
+    <button>
+      <text>Request(Explanation)</text>
+      <command>request(explanation)</command>
+    </button>
+
+  </row>
+  <row>
+    <button span="4">
+      <text>Child Asks Questions</text>
+    </button>
+  </row>
+  <!-- Asker is user, provide question, answers, feedback on correctness -->
+  <row>
+    <button  span="2">
+      <text>Provide(RandomQuestionWithAnswers)</text>
+      <command>provide(question, id=-1, answersProvided=true)</command>
+    </button>
+    <!--<button span="2"><text>For Quiz with Tablet</text></button>-->
+  </row>
+  <row>
+    <button>
+      <text>Provide(freequestion)</text>
+      <command>provide(freequestion</command>
+    </button>
+    <button>
+      <text>Provide(RandomQuestion)</text>
+      <command>provide(question, id=-1)</command>
+    </button>
+    <button>
+      <text>Provide(Answers)</text>
+      <command>provide(answers)</command>
+    </button>
+  </row>
+  <row>
+    <button>
+      <text>Inform(Answer=correct)</text>
+      <command>feedback(correctness, value=yes)</command>
+    </button>
+    <button>
+      <text>Inform(Answer=incorrect)</text>
+      <command>feedback(correctness, value=no)</command>
+    </button>
+    <button>
+      <text>Provide(Solution)</text>
+      <command>provide(solution)</command>
+    </button>
+    <button>
+      <text>Request(RepeatAnswer)</text>
+      <command>request(repeat, what=answer)</command>
+    </button>
+  </row>
+  <row>
+    <button>
+      <text>Provide(Explanation)</text>
+      <command>provide(explanation, known=yes)</command>
+    </button>
+    <button>
+      <text>Provide(Explanation=unknown)</text>
+      <command>provide(explanation, known=no)</command>
+    </button>
+  </row>
+  <row>
+    <button span="4" buttonheight="10">
+      <text></text>
+    </button>
+  </row>
+  <row>
+   <button>
+     <text>Confirm(AnotherGame=no)</text>
+     <command>reject(repeat, what=game)</command>
+   </button>
+   <button>
+     <text>Confirm(AnotherGame=yes)</text>
+     <command>confirm(repeat, what=game)</command>
+   </button>
+   <button>
+     <text>Stop(Game)</text>
+     <command>request(stop, what=game)</command>
+   </button>
+   <button> <!-- isn't that the same as stop(user/robot asks)? -->
+     <text>Request(Rolechange)</text>
+     <command>request(stop, what=round)</command>
+   </button>
+   <!--
+   <button>
+     <text>play quiz</text>
+     <command>request(play, what=quiz)</command>
+   </button>
+   <button>
+     <text>play sorting</text>
+     <command>request(play, what=sorting)</command>
+   </button>-->
+   <!-- this should be in the intro or switch section
+   <button>
+     <text>Confirm(PlayGame=no)</text>
+     <command>Confirm(PlayGame=no)</command>
+   </button>
+   <button>
+     <text>Confirm(PlayGame=yes)</text>
+     <command>Confirm(PlayGame=yes)</command>
+   </button>
+   <button>
+     <text>Provide(Name=)</text>
+     <command>Provide(Name=)</command>
+   </button>
+   -->
+   <!--
+   <button>
+     <text>Provide(Question=)</text>
+     <command>provide(question)</command>
+   </button>
+   -->
+  </row>
+  <row>
+    <button>
+      <text>Provide(GameFun=no)</text>
+      <command>provide(fun, value=no)</command>
+    </button>
+    <button>
+      <text>Provide(GameFun=yes)</text>
+      <command>provide(fun, value=yes)</command>
+    </button>
+    <!--
+    <button>
+      <text>Reject(ContinuePlaying)</text>
+      <command>reject(continue, what=game)</command>
+    </button>
+    <button>
+      <text>Confirm(ContinuePlaying)</text>
+      <command>confirm(continue, what=game)</command>
+    </button>
+    -->
+    <button><text></text></button>
+    <button>
+      <text>Silence()</text>
+      <command>Silence(silence)</command>
+    </button>
+  </row>
+</grid>

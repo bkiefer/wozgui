@@ -1,0 +1,49 @@
+<grid buttonwidth="50" buttonheight="50" inset="2">
+  <row>
+   <button bgcolor="ffff7f">
+     <text>turn left</text>
+     <icon>turn_left.png</icon>
+     <command>provide(freeresponse, motion="turn_left")</command>
+   </button>
+   <button bgcolor="aaff7f">
+     <text>forward</text>
+     <icon>forward.png</icon>
+     <command>provide(freeresponse, motion="walk_fwd")</command>
+   </button>
+   <button bgcolor="ffff7f">
+     <text>turn right</text>
+     <icon>turn_right.png</icon>
+     <command>provide(freeresponse, motion="turn_right")</command>
+   </button>
+  </row>
+  <row>
+   <button bgcolor="aaff7f">
+     <text>left</text>
+     <icon>left.png</icon>
+     <command>provide(freeresponse, motion="walk_left")</command>
+   </button>
+   <button/>
+   <button bgcolor="aaff7f">
+     <text>right</text>
+     <icon>right.png</icon>
+     <command>provide(freeresponse, motion="walk_right")</command>
+   </button>
+  </row>
+  <row>
+   <button bgcolor="ffaa00">
+     <text>crouch</text>
+     <icon>crouch.png</icon>
+     <command>provide(freeresponse, motion="neutral")</command>
+   </button>
+   <button bgcolor="aaff7f">
+     <text>backward</text>
+     <icon>backward.png</icon>
+     <command>provide(freeresponse, motion="walk_bwd")</command>
+   </button>
+   <button bgcolor="ffaa00">
+     <text>stand up</text>
+     <icon>initial.png</icon>
+     <command>provide(freeresponse, motion="neutralUp")</command>
+   </button>
+  </row>
+</grid>

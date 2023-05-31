@@ -1,0 +1,15 @@
+<grid buttonwidth="200" buttonheight="30"
+      bgcolor="55aa00" fgcolor="ffffff" inset="3">
+  <row>
+   <button>
+     <text>Unlock images</text>
+     <command>Unlock</command>
+   </button>
+  </row>
+  <row>
+    <button>
+      <text>conv filling</text>
+      <command>provide(convfilling)</command>
+    </button>
+  </row>
+</grid>

@@ -1,0 +1,7 @@
+<activities panels="buttonPanels" icons="icons" smalltalk="smalltalk">
+  <activity name="Quiz"/>
+  <activity name="Introduction"/>
+  <activity name="Closing"/>
+  <activity name="Sorting"/>
+  <activity name="Switch"/>
+</activities>

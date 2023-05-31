@@ -1,0 +1,73 @@
+<grid>
+<row>
+   <button>
+     <text>conv filling</text>
+     <command>provide(convfilling)</command>
+   </button>
+      <button>
+      <text>start WalkWithMe</text>
+      <command>provide(freeresponse, motion=startWalkWithMe)</command>
+    </button>
+    <button>
+      <text>stop WalkWithMe</text>
+      <command>provide(freeresponse, motion=stopWalkWithMe)</command>
+    </button>
+
+</row>
+<!--  <row>
+    <button span="2" bgcolor="00FF00">
+      <text>provide(freeresponse)</text>
+      <command>provide(freeresponse)</command>
+    </button>
+  </row>
+  <row>
+    <button>
+      <text>Continue(continue)</text>
+      <command>continue(continue)</command>
+    </button>
+    <button>
+      <text>Request(KeepPlaying)</text>
+      <command>request(keepPlaying)</command>
+    </button>
+  </row>
+<row>
+   <button>
+      <text>Express(Failure)</text>
+      <command>express(failure)</command>
+    </button>
+    <button>
+      <text>Express(Success)</text>
+      <command>express(success)</command>
+    </button>
+  </row>
+  <row>
+    <button>
+      <text>request(playgame)</text>
+      <command>request(playgame)</command>
+    </button>
+     <button>
+      <text>Apology(ContinuePlaying)</text>
+      <command>apology(continuePlaying)</command>
+    </button>
+  </row>
+<row>
+    <button>
+      <text>Acknowledgement(NoPlay)</text>
+      <command>acknowledgement(noplay)</command>
+    </button>
+    <button>
+      <text>Acknowledgement(Play)</text>
+      <command>acknowledgement(play)</command>
+    </button>
+ </row>
+  <row>
+    <button>
+      <text>StopPlaying(Technical)</text>
+      <command>stopPlaying(technical)</command>
+    </button>
+    <button>
+      <text>StopPlaying(Time)</text>
+      <command>stopPlaying(time)</command>
+    </button>
+  </row>-->
+</grid>

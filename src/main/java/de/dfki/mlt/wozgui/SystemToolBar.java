@@ -26,7 +26,7 @@ import de.dfki.mlt.wozgui.xml.Activities.Activity;
 @SuppressWarnings("serial")
 public class SystemToolBar extends JToolBar {
 
-  private Listener<String> _buttonListener;
+  private Receiver<String> _buttonListener;
 
   private static ButtonDefs lastButton = ButtonDefs.VOICE;
 
@@ -216,7 +216,7 @@ public class SystemToolBar extends JToolBar {
 
 
   public SystemToolBar(final WizardGui frame, int orientation,
-      Listener<String> buttonListener, int buttonSize) {
+      Receiver<String> buttonListener, int buttonSize) {
     super(orientation);
     _parent = frame;
     _buttonListener = buttonListener;

@@ -2,7 +2,7 @@ package de.dfki.mlt.wozgui;
 
 import de.dfki.mlt.wozgui.WizardGui.Conversant;
 
-class SysListener implements Listener<String> {
+class SysListener implements Receiver<String> {
   WizardGui g;
   public SysListener(WizardGui gui) {
     g = gui;
@@ -34,11 +34,5 @@ class SysListener implements Listener<String> {
   public void receive(String event, String message) {
     react(event);
     g.setMessage(c, "[" + event + "," + message + "]");
-  }
-
-  @Override
-  public void receive(String event) {
-    react(event);
-    g.setMessage(c, "[" + event + "]");
   }
 }

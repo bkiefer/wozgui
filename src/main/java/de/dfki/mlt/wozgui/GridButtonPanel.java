@@ -48,11 +48,8 @@ public class GridButtonPanel extends JPanel {
   /** The owner of this panel */
   private WizardGui _parent;
 
-  /** to locate icon resources */
-  private File rootDir;
-
   /** The listener to send actions and messages to */
-  private Listener<String> _listener;
+  private Receiver<String> _receiver;
 
   /** To be able to add a scroll bar to the button panel */
   private JPanel _contentPanel;
@@ -68,10 +65,12 @@ public class GridButtonPanel extends JPanel {
   @SuppressWarnings("serial")
   public class GridButtonAction extends AbstractAction {
     private String _action;
+    private String _label;
     private int _id;
     private int[] _nextAction;
 
     public GridButtonAction(String label, String iconName, String action) {
+      _label = label;
       _action = action;
 
       ImageIcon icon = _parent.loadIcon(iconName, 48);
@@ -88,7 +87,7 @@ public class GridButtonPanel extends JPanel {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-      _listener.receive( getAction() );
+      _receiver.receive(_label, getAction());
     }
 
     @Override
@@ -102,7 +101,7 @@ public class GridButtonPanel extends JPanel {
   }
 
 
-  public GridButtonPanel(WizardGui p, Listener<String> l, File f)
+  public GridButtonPanel(WizardGui p, Receiver<String> l, File f)
       throws IOException {
     super(WITH_SCROLLBARS ? new BorderLayout() : new GridBagLayout());
     if (WITH_SCROLLBARS) {
@@ -113,9 +112,8 @@ public class GridButtonPanel extends JPanel {
       _contentPanel = this;
     }
     c = new GridBagConstraints();
-    _listener = l;
+    _receiver = l;
     this._parent = p;
-    this.rootDir = p.configDir;
     Grid g = Grid.readGrid(f);
     int row = 0;
     for (Grid.Row r : g.rows) {
@@ -180,7 +178,17 @@ public class GridButtonPanel extends JPanel {
   }
   */
 
-  private JComponent getFreeResponseField(final String action, Dimension d) {
+  /** Create a JTextField to be able to enter arbitrary text
+   *
+   * The receiver needs to take specific means for the free text field if it
+   * intends to do so. The text is guaranteed to contain the FREE_RESPONSE_TAG,
+   * so it can be identified by that.
+   *
+   * TODO: add a history and a drop-down menu showing it that is attached to the
+   * text field
+   */
+  private JComponent getFreeResponseField(final String text, final String action,
+      Dimension d) {
     JTextField _freeResponse;
     _freeResponse = new JTextField();
     _freeResponse.setText("");
@@ -190,13 +198,17 @@ public class GridButtonPanel extends JPanel {
     setListeners(_freeResponse, new ActionListener(){
       @Override
       public void actionPerformed(ActionEvent e) {
-        _listener.receive(_parent.freeResponseAction(e.getActionCommand()));
+        // The receiver needs to take specific means for the free text field if
+        // it intends to do so. The text is guaranteed to contain the
+        // FREE_RESPONSE_TAG, so it can be identified by that.
+        _receiver.receive(text, e.getActionCommand());
       }
     });
     return _freeResponse;
   }
 
-  public void addCell(String text, String command, String iconName, Style style,
+
+  private void addCell(String text, String command, String iconName, Style style,
       int row, int col) {
     JComponent component;
     c.gridx = col;
@@ -209,8 +221,8 @@ public class GridButtonPanel extends JPanel {
       component = new JLabel(text, style.getAlignment());
       c.anchor = GridBagConstraints.SOUTHWEST;
     } else {
-      if (command.equals(FREE_RESPONSE_ACTION)) {
-        component = getFreeResponseField(FREE_RESPONSE_ACTION, style.getDimension());
+      if (text.toLowerCase().contains(FREE_RESPONSE_TAG)) {
+        component = getFreeResponseField(text, command, style.getDimension());
       } /* else if (command.equals(FREE_QUESTION_ACTION)) {
         component = getFreeQuestionField(text, FREE_QUESTION_ACTION);
       } */
@@ -239,25 +251,4 @@ public class GridButtonPanel extends JPanel {
     component.setAlignmentY(Component.CENTER_ALIGNMENT);
     _contentPanel.add(component, c);
   }
-
-
-  /** To test your GridButtonPanels, just supply the xml file name *
-  public static void main(String[] args) throws JDOMException, IOException {
-    for (String s : args) {
-      JFrame f = new JFrame();
-      f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      InputSource is = new InputSource();
-      is.setCharacterStream(new FileReader(s));
-      GridButtonPanel gbp = new GridButtonPanel(
-          new StringListenerBase() {
-            public void receive(String action, String msg) {
-              System.out.println(action +" | "+ msg); }
-          },
-          is);
-      f.add(gbp);
-      f.pack();
-      f.setVisible(true);
-    }
-  }
-  */
 }

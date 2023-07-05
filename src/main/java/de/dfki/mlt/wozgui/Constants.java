@@ -26,6 +26,6 @@ public interface Constants {
   Dimension buttonSmallTalkThemeSize =
       new Dimension(SMALLTALK_THEME_BUTTONWIDTH, 30);
 
-  public static final String FREE_RESPONSE_ACTION = "freeresponse";
+  public static final String FREE_RESPONSE_TAG = "free response";
 
 }

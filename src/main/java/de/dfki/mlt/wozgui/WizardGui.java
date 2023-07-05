@@ -104,7 +104,7 @@ public class WizardGui extends JFrame {
         //    _activeUser.getFavoriteColor(), _activeUser.getHobby());
         String adaptText = _text;
 
-        _robotListeners.receive(freeResponseAction(_motion, adaptText));
+        _robotListeners.receive(FREE_RESPONSE_TAG, _motion + "|" + adaptText);
       } catch (Exception ex) {
         ex.printStackTrace();
       }
@@ -134,7 +134,7 @@ public class WizardGui extends JFrame {
 
   // To send commands as if they came from the robot, to inject tts speech
   // or motion, or other speech acts directly, like the robot "brain"
-  private Listener<String> _robotListeners;
+  private Receiver<String> _robotListeners;
 
   /** The directory where the top-level context is */
   public File configDir;
@@ -143,7 +143,7 @@ public class WizardGui extends JFrame {
   String panelDir;
   String smalltalkDir;
 
-  public static final int Activity_NONE = 0;
+  //public static final int Activity_NONE = 0;
 
   /** The list of activities */
   public List<Activity> activities;
@@ -158,8 +158,8 @@ public class WizardGui extends JFrame {
   // private Listener<String> asrOnFileListener;
 
   UserQuestionDialog uq;
-  private Listener<String> _userListeners;
-  private Listener<String> _sysListeners;
+  private Receiver<String> _userListeners;
+  private Receiver<String> _sysListeners;
 
   // Rescale a image into JLabel
   private static BufferedImage scale(BufferedImage src, int w, int h) {
@@ -258,18 +258,15 @@ public class WizardGui extends JFrame {
 
   protected void setActivities(Activities a) {
     activities = a.getActivities();
-    Activity none = new Activity();
-    none.name = "None";
-    activities.add(0, none);
     for (int i = 0; i < activities.size(); ++i) {
       activities.get(i).ordinal = i;
     }
-    int acts = activities.size() + 1;
+    int acts = activities.size();
     activityPanels = new JComponent[acts][];
     //_sysListeners = new Listener[acts];
     //_userListeners = new Listener[acts];
     //_robotListeners = new Listener[acts];
-    currentActivity = Activity_NONE;
+    currentActivity = -1;
 
     iconDir = a.icons;
     panelDir = a.panels;
@@ -332,9 +329,9 @@ public class WizardGui extends JFrame {
    *          speech or motion, or other speech acts directly, like the robot
    *          "brain"
    */
-  public void createGui(Listener<String> system, Listener<String> user,
+  public void createGui(Receiver<String> system, Receiver<String> user,
   // StringEventListener asrOnFileListener,
-      Listener<String> robot) {
+      Receiver<String> robot) {
     Thread currentThread = Thread.currentThread();
     ClassLoader old = currentThread.getContextClassLoader();
     try {
@@ -352,7 +349,7 @@ public class WizardGui extends JFrame {
   }
 
   private void createActivityPanel(Activity activity,
-      Listener<String>... listeners) throws IOException {
+      Receiver<String>... listeners) throws IOException {
     int ordinal = activity.ordinal;
     String actName = activity.name.toLowerCase();
     activityPanels[ordinal] = new JComponent[2];
@@ -380,8 +377,8 @@ public class WizardGui extends JFrame {
    * @throws IOException
    * @throws JDOMException
    */
-  public void createGui2(final Listener<String> sysListener,
-      Listener<String> userListener) throws IOException {
+  public void createGui2(final Receiver<String> sysListener,
+      Receiver<String> userListener) throws IOException {
     try {
       String lookAndFeel = UIManager.getCrossPlatformLookAndFeelClassName();
       // BB replaced 'getSystemLookAndFeelClassName'
@@ -405,21 +402,21 @@ public class WizardGui extends JFrame {
     // ////////////////////////////////////////////////////////////////////
 
     // Empty panel for NONE
-    activityPanels[Activity_NONE] = new JComponent[1];
-    activityPanels[Activity_NONE][0] = newVerticalButtonPanel();
+    //activityPanels[Activity_NONE] = new JComponent[1];
+    //activityPanels[Activity_NONE][0] = newVerticalButtonPanel();
 
     // a panel for smalltalk buttons
     smallTalkInput = new SmalltalkPanel(this, new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
-        _robotListeners.receive(freeResponseAction(e.getActionCommand()));
+        _robotListeners.receive(FREE_RESPONSE_TAG, e.getActionCommand());
       }
     });
 
     // TODO: PUT INTO TABBED PANE?
     for (Activity activity : activities) {
-      if (activity != activities.get(Activity_NONE))
-        createActivityPanel(activity, userListener, _robotListeners);
+      //if (activity != activities.get(Activity_NONE))
+      createActivityPanel(activity, userListener, _robotListeners);
       // _userListeners[activity.ordinal()],
       // _sysListeners[activity.ordinal()]);
     }
@@ -497,12 +494,7 @@ public class WizardGui extends JFrame {
     content.add(statusBar, BorderLayout.SOUTH);
 
     systemToolBar =
-        new SystemToolBar(this, JToolBar.HORIZONTAL, new Listener<String>() {
-          @Override
-          public void receive(String event) {
-            receive(event, "");
-          }
-
+        new SystemToolBar(this, JToolBar.HORIZONTAL, new Receiver<String>() {
           @Override
           public void receive(String event, String message) {
             sysListener.receive(event, message);
@@ -642,7 +634,7 @@ public class WizardGui extends JFrame {
             break;
         }
         if (userAnswer.length() > 0) {
-          _userListeners.receive(userAnswer);
+          _userListeners.receive("", userAnswer);
         }
       }
 
@@ -804,29 +796,6 @@ public class WizardGui extends JFrame {
   // ////////////////////////////////////////////////////////////////////
   // Small Talk panel utility methods
   // ////////////////////////////////////////////////////////////////////
-
-  /** This method is not static only because it's meant to be overridden */
-  protected String freeResponseAction(String motion, String text) {
-    if (text.startsWith("@"))
-      return text.substring(1);
-    StringBuilder sb = new StringBuilder();
-    sb.append("provide(freeresponse");
-    if (motion != null)
-      sb.append(", motion=\"").append(motion).append("\"");
-    if (text != null)
-      sb.append(", string=\"").append(text).append("\"");
-    sb.append(")");
-    return sb.toString();
-  }
-
-  String freeResponseAction(String textAndMotion) {
-    int firstBar = textAndMotion.indexOf('|');
-    if (firstBar >= 0) {
-      return freeResponseAction(textAndMotion.substring(firstBar + 1),
-          textAndMotion.substring(0, firstBar));
-    }
-    return freeResponseAction(null, textAndMotion);
-  }
 
   public void quitProgram() {
     System.exit(0);

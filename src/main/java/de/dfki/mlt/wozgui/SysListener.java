@@ -2,7 +2,7 @@ package de.dfki.mlt.wozgui;
 
 import de.dfki.mlt.wozgui.WizardGui.Conversant;
 
-class SysListener implements Receiver<String> {
+public class SysListener implements Receiver<String> {
   WizardGui g;
   public SysListener(WizardGui gui) {
     g = gui;

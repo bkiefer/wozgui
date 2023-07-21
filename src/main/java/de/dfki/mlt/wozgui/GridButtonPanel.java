@@ -201,7 +201,7 @@ public class GridButtonPanel extends JPanel {
         // The receiver needs to take specific means for the free text field if
         // it intends to do so. The text is guaranteed to contain the
         // FREE_RESPONSE_TAG, so it can be identified by that.
-        _receiver.receive(text, e.getActionCommand());
+        _receiver.receive(e.getActionCommand(), action);
       }
     });
     return _freeResponse;

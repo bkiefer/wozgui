@@ -315,7 +315,7 @@ public class SmalltalkPanel extends JPanel {
       String suffix = (underScorePos < 0) ? "" : lang.substring(underScorePos);
 
       File st = getResource(parent.configDir, parent.smalltalkDir,
-          "woz-smalltalk-" + lang.toLowerCase().substring(0, 3) + suffix + ".xml");
+          "woz-smalltalk-" + lang.toLowerCase() + suffix + ".xml");
       logger.info("Reading SmallTalk file " + st);
       themes = Themes.readThemes(st);
       logger.info("Themes: " + themes.size());

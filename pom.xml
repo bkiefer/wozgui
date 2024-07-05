@@ -5,7 +5,7 @@
 
   <groupId>de.dfki.mlt</groupId>
   <artifactId>wozgui</artifactId>
-  <version>0.1.1</version>
+  <version>0.2.0</version>
   <packaging>jar</packaging>
 
   <licenses>
@@ -92,4 +92,10 @@
     </dependency>
   </dependencies>
 
+  <repositories>
+    <repository>
+      <id>github</id>
+      <url>https://raw.githubusercontent.com/DFKI-MLT/Maven-Repository/main</url>
+    </repository>
+  </repositories>
 </project>

@@ -32,6 +32,8 @@ import java.awt.Graphics2D;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -54,6 +56,7 @@ import javax.swing.JTextPane;
 import javax.swing.JToolBar;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.border.MatteBorder;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
@@ -125,6 +128,8 @@ public class WizardGui extends JFrame {
   // Container content ;
   private JTabbedPane activityPane;
   private JLabel statusBar;
+
+  private boolean motionButtonsVisible = true;
 
   /** Panels for the different Activities (see Activity enum) */
   private JComponent[][] activityPanels;
@@ -443,19 +448,35 @@ public class WizardGui extends JFrame {
     textPane.setFont(MONITOR_FONT);
     textPane.setEditable(false);
 
+
+    // motion buttons on the right
+    File moFile = getResource(configDir, panelDir, "motionActions.xml");
+    GridButtonPanel motionButtons = new GridButtonPanel(this, _robotListeners, moFile);
+    //motionButtons.setBorder(new MatteBorder(5,0,0,0,Color.gray));
+
+    // Ouput messages on the left
     JScrollPane outputPane = new JScrollPane();
     outputPane.setViewportView(textPane);
+    outputPane.setBorder(new MatteBorder(0,0,0,5,Color.gray));
+    outputPane.addMouseListener(new MouseAdapter() {
+      @Override
+      public void mouseClicked(MouseEvent ev) {
+        int width = outputPane.getWidth();
+        if (ev.getX() > width - 5) {
+          motionButtonsVisible = ! motionButtonsVisible;
+          motionButtons.setVisible(motionButtonsVisible);
+        }
+      }
+    });
 
     // dialoguePane contains the (scrollable) text output window and the motion
     // buttons
     JPanel dialoguePane = new JPanel();
     dialoguePane.setLayout(new BorderLayout());
     dialoguePane.add(outputPane, BorderLayout.CENTER);
-
     // motion buttons on the right
-    File moFile = getResource(configDir, panelDir, "motionActions.xml");
-    dialoguePane.add(new GridButtonPanel(this, _robotListeners, moFile),
-            BorderLayout.EAST);
+    dialoguePane.add(motionButtons, BorderLayout.EAST);
+
 
     // Create the status bar
     statusBar = new JLabel("dialogue state");

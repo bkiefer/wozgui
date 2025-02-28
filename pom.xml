@@ -5,7 +5,7 @@
 
   <groupId>de.dfki.mlt</groupId>
   <artifactId>wozgui</artifactId>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
   <packaging>jar</packaging>
 
   <licenses>
@@ -22,7 +22,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <jaxb.version>2.3.1</jaxb.version>
     <slf4j.version>2.0.9</slf4j.version>
-    <logback.version>1.4.11</logback.version>
+    <logback.version>1.5.17</logback.version>
   </properties>
 
   <build>

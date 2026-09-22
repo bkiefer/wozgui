@@ -36,6 +36,12 @@ import de.dfki.mlt.wozgui.xml.Themes.Subtheme;
 import de.dfki.mlt.wozgui.xml.Themes.Theme;
 import de.dfki.mlt.wozgui.xml.Themes.Utterance;
 
+/** This panel contains multiple buttons to be able to manually send text strings
+ * to test an underlying program, or to implement a Wizard-of-Oz interface.
+ * The size and layout of the panel can be determined using an XML file.
+ * 
+ * For details on the form of the XML specifications, see TODO
+ */
 @SuppressWarnings("serial")
 public class SmalltalkPanel extends JPanel {
 

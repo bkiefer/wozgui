@@ -35,6 +35,12 @@ import javax.swing.JTextField;
 import de.dfki.mlt.wozgui.xml.Grid;
 import de.dfki.mlt.wozgui.xml.Style;
 
+/** This panel contains multiple buttons to be able to manually execute triggers
+ * to test an underlying program, or to implement a Wizard-of-Oz interface.
+ * The size and layout of the panel can be determined using an XML file.
+ * 
+ * For details on the form of the XML specifications, see TODO
+ */
 public class GridButtonPanel extends JPanel {
 
   private static final long serialVersionUID = 1L;

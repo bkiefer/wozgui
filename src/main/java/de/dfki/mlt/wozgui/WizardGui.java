@@ -165,6 +165,11 @@ public class WizardGui extends JFrame {
   UserQuestionDialog uq;
   private Receiver<String> _userListeners;
   private Receiver<String> _sysListeners;
+  
+  protected JPanel dialoguePane;
+  protected JPanel motionButtons;
+  protected JScrollPane outputPane;
+  
 
   // Rescale a image into JLabel
   private static BufferedImage scale(BufferedImage src, int w, int h) {
@@ -278,6 +283,7 @@ public class WizardGui extends JFrame {
     smalltalkDir = a.smalltalk;
   }
 
+  static Font MONITOR_FONT, ICON_FONT;
 
   /**
    * constructor: The config file currently only contains the activities
@@ -285,6 +291,8 @@ public class WizardGui extends JFrame {
    */
   public WizardGui() {
     super(GUI_TITLE);
+    MONITOR_FONT = new Font(GUI_FONT, Font.PLAIN, GUI_FONTSIZE_TEXT);
+    ICON_FONT =  new Font(GUI_FONT, Font.BOLD, GUI_FONTSIZE_ICON);
   }
 
   private JComponent newVerticalButtonPanel() {
@@ -344,6 +352,9 @@ public class WizardGui extends JFrame {
       this._userListeners = user;
       this._robotListeners = robot;
       createGui2(system, user);
+      pack();
+      // setLocationByPlatform(true);
+      setVisible(true);
     } catch (Exception ex) {
       logger.error(ex.getMessage());
       ex.printStackTrace();
@@ -451,11 +462,11 @@ public class WizardGui extends JFrame {
 
     // motion buttons on the right
     File moFile = getResource(configDir, panelDir, "motionActions.xml");
-    GridButtonPanel motionButtons = new GridButtonPanel(this, _robotListeners, moFile);
+    motionButtons = new GridButtonPanel(this, _robotListeners, moFile);
     //motionButtons.setBorder(new MatteBorder(5,0,0,0,Color.gray));
 
     // Ouput messages on the left
-    JScrollPane outputPane = new JScrollPane();
+    outputPane = new JScrollPane();
     outputPane.setViewportView(textPane);
     outputPane.setBorder(new MatteBorder(0,0,0,5,Color.gray));
     outputPane.addMouseListener(new MouseAdapter() {
@@ -471,7 +482,7 @@ public class WizardGui extends JFrame {
 
     // dialoguePane contains the (scrollable) text output window and the motion
     // buttons
-    JPanel dialoguePane = new JPanel();
+    dialoguePane = new JPanel();
     dialoguePane.setLayout(new BorderLayout());
     dialoguePane.add(outputPane, BorderLayout.CENTER);
     // motion buttons on the right
@@ -539,10 +550,6 @@ public class WizardGui extends JFrame {
 
     ((JComponent) content).setBorder(BorderFactory.createLineBorder(Color.blue,
         2));
-
-    pack();
-    // setLocationByPlatform(true);
-    setVisible(true);
   }
 
   /**
